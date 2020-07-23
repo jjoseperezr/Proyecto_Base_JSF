@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Proyecto Base JSF - Lenguaje de Programación Avanzado 2</title>
+        <style>
+            .wrapper {
+                margin-left: 20px;
+                margin-right: 20px
+            }
+            header {
+                background-color: #D8D6D7;
+                padding: 5px;
+                margin-bottom: 10px;
+            }
+            input[type=text], select {
+                width: 20%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+              }
+
+              input[type=submit] {
+                width: 10%;
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+              }
+
+              input[type=submit]:hover {
+                background-color: #45a049;
+              }
+
+              form_container {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+                width: 50px;
+              }
+        </style>
+    </h:head>
+    <h:body>
+        <div class="wrapper">
+
+            <header class="header">
+                <h1>Proyecto Base JSF - Lenguaje de Programación Avanzado 2</h1>
+            </header>
+
+            <div class="form_container">
+                
+               <h:form> 
+                   <p>
+                       <strong>Hola #{personaBean.persona.nombre} #{personaBean.persona.apellido}</strong>
+                    </p>
+                   <p> 
+                       Haz ingresado a nuestro sitio satisfactoriamente. 
+                   </p>
+                   <p>
+                       <h:commandLink action="index" value="Regresar al Inicio"/> 
+                    </p>
+            </h:form>
+            </div>
+            
+            <footer>
+                <p>Integrates</p>
+                <ul>
+                    <li>Jhon Esteban Herrera Zabala</li>
+                    <li>Juan José Pérez Romero</li>
+                    <li>Rene Orlando Galvez Cruz</li>
+                    <li>Jessica Andrea Romero Caro</li>
+                    <li>Paula Andrea Angel Tobón</li>
+                    <li>Hernando Nieto Jaramillo</li>
+                </ul>
+            </footer>
+
+        </div>
+    </h:body>
+</html>
+
+
+
